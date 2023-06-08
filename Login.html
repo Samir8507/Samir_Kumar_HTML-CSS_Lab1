@@ -1,0 +1,98 @@
+<!DOcloCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        .center {
+            position: absolute;
+            top: 40%;
+            left: 15%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 500px;
+            padding: 5px 500px;
+    }
+    input:focus {
+  background-color: lightblue;
+}
+    h2{
+        text-align: center;
+    }
+    .login{
+        color: white;
+        width: 300px;
+        padding: 10px;
+        position: absolute;
+        font-size: 20px;
+        top: 10%;
+        right: 50px; 
+        line-height: 50px;
+        border-radius: 10px;
+        background: transparent;
+        text-align: center;
+        vertical-align: center;
+        border: 1px solid white;
+    
+
+    }
+    input{
+        height: 30px;
+        width: 98%;
+        padding-left: 10px;
+        border-radius: 8px;
+    }
+    button{
+        margin-top: 10px;
+        width:110px;
+        height: 40px;
+        padding: 5px;
+        float: right;
+        vertical-align: middle;
+        font-size: 20px;
+        border-radius: 30px;
+        background-color: rgb(67, 185, 67);
+        color: white;
+    }
+    #myVideo{
+        position: fixed;
+        width: auto;
+        height: auto;
+    }
+    a{
+        color: white;
+        font-size: 14px;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="center">
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+   
+
+    <div class="login">
+        <h2>Create Gmail Account</h2>
+        <form>
+            <label for="name"></label><br>
+            <input type="text" name="name" placeholder="Full Name" required><br>
+            <label for="number"></label><br>
+            <input type="number" number="number" placeholder="Contact Number" required><br>
+            <label for="email"></label><br>
+            <input type="email" name="email" placeholder="Enter email id" required>
+            <button>Submit</button>
+            <button>Reset</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

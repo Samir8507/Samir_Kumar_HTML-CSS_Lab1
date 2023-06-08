@@ -1,0 +1,62 @@
+header{
+    background-color:crimson;
+    padding: 30px;
+    text-align: right;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+
+}
+nav-bar{
+    font-family: monospace;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    background-color:darkslategrey;
+    margin: 0;
+    list-style: none;
+    padding: 20px;
+}
+li{
+    text-align: center;
+    display: block;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    width: 70px;
+}
+li a{
+    color: white;
+}
+li :hover{
+    cursor: pointer;
+    background-color: black;
+}
+ul li ul{
+    background-color:rgb(205, 22, 230);
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition-delay: 25s;
+    margin-top: 0;
+    left: 0;
+    display: none;
+    min-height: 10px;
+}
+ul li:hover > ul,
+ul li ul:hover {
+visibility: visible;
+opacity: 1;
+display: block;
+}
+ul li ul li{
+    clear: both;
+    width: 100%;
+}
+a:hover{
+    cursor: pointer;
+    background-color: black;
+}
